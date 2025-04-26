@@ -1,5 +1,5 @@
 # 🎴 Anime Memory Game – Flip & Match Challenge! 🧠  
-Built with HTML, CSS & JavaScript | Deployed on Vercel  
+Built with HTML, CSS & JavaScript  
 
 Welcome to the **Anime Memory Game**, a fast-paced memory challenge that blends addictive gameplay with anime visuals! Flip the cards, match identical pairs, and beat the clock before time runs out. Simple to play, hard to master — this game will train your brain and test your focus!
 

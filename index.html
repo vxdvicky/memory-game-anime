@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="game.css">
+  <title>Memory Game</title>
+ 
+</head>
+<body>
+
+<div class="container">
+  <h1>MEMORY GAME</h1>
+  <div class="timer" id="timer">Time: 40s</div>
+  <div class="game" id="game"></div>
+  <button class="reset" onclick="location.reload()">Restart</button>
+</div>
+
+<div class="popup" id="popup">
+  <h2 id="popupText">Time Over!</h2>
+  <button class="next" id="nextBtn">Try Again</button>
+</div>
+
+<!-- Sounds -->
+<audio id="flipSound" src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_d1eac19059.mp3"></audio>
+<audio id="matchSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4aa68a6316.mp3"></audio>
+<audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/03/03/audio_b14819df1c.mp3"></audio>
+<audio id="failSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_203b734f2e.mp3"></audio>
+<!-- <link rel="stylesheet" href="game.js"> -->
+<script src="game.js"></script>
+</body>
+</html>

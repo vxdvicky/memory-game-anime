@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Game - Start</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Courier New', monospace;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('bgpic.jpg') center/cover no-repeat;
+      backdrop-filter: blur(3px);
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 40px 60px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      opacity: 0.8;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: slideText 5s linear infinite;
+    }
+
+    @keyframes slideText {
+      0% { background-position: 0% }
+      100% { background-position: 200% }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      background-color: #111;
+      color: white;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3498db;
+      color: white;
+      border: 2px solid white;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="card.jpg" alt="Game Icon">
+    <h1>MEMORY GAME</h1>
+    <a href="file:///C:/Users/acer/Desktop/website%20gm/index.html">
+      <input type="button" value="START" class="btn" />
+    </a>
+  </div>
+</body>
+</html>
